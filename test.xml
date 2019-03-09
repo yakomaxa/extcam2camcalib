@@ -1,0 +1,37 @@
+<opencv_storage>
+<camera_id>0</camera_id>
+<camera_name>"0411&amp;pid_0260&amp;mi_00#7&amp;17e718de&amp;"</camera_name>
+<image_width>1280</image_width>
+<image_height>960</image_height>
+<camera_matrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>831.3843876330614 0 640.0 0 831.3843876330614 480.0 0 0 1 </data></camera_matrix>
+<distortion_coefficients type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    0.0 0.0
+    0.0 0.0
+    0.0</data></distortion_coefficients>
+<translation type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>0.8698729 1.4904260999999999 -1.294996</data></translation>
+<rotation type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>-0.11141107393065441 -0.1451937383619162 -0.1451937383619162 0.9723297430844133 </data></rotation>
+<attachedDevice>3</attachedDevice>
+<camDelayMs>0</camDelayMs>
+<chromaKeyColorRed>0</chromaKeyColorRed>
+<chromaKeyColorGreen>255</chromaKeyColorGreen>
+<chromaKeyColorBlue>0</chromaKeyColorBlue>
+<chromaKeySimilarity>6.0000002384185791e-01</chromaKeySimilarity>
+<chromaKeySmoothRange>2.9999999329447746e-02</chromaKeySmoothRange>
+<chromaKeySpillRange>5.9999998658895493e-02</chromaKeySpillRange>
+</opencv_storage>

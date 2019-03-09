@@ -111,7 +111,6 @@ def main(infile, outfile,
     #displaywidth = 1280
     #displayheight = 960
     #slice = 1.65
-    #file = "/Users/sakuma/MSA/python_calib/externalcamera.cfg"
     cfg=read_cfg(infile)
     outdata = dict()
     outdata["x"] = cfg["x"]
