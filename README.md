@@ -1,0 +1,1 @@
+externalcamera.cfg -> cameracalibration.xml
