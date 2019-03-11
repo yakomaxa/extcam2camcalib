@@ -31,7 +31,7 @@ def fov2cameramatrix(fov, W, H , hetero=False):
     cameramatrix=[fx,0,cx,0,fy,cy,0,0,1]
     return(cameramatrix)
 
-def eular2quaternion(rx,ry,rz):
+def euler2quaternion(rx,ry,rz):
     from pyquaternion import Quaternion
     from math import pi
     from math import sin
@@ -117,7 +117,7 @@ def main(infile, outfile,
     outdata["y"] = cfg["y"] + intercept
     outdata["z"] = -cfg["z"]
     outdata["cameramatrix"] = fov2cameramatrix(fov=cfg["fov"], W=displaywidth, H=displayheight)
-    outdata["rotation"] = eular2quaternion(cfg["rx"], cfg["ry"], cfg["rz"])
+    outdata["rotation"] = euler2quaternion(cfg["rx"], cfg["ry"], cfg["rz"])
     outdata["dw"] = displaywidth
     outdata["dh"] = displayheight
     write_oculusxml(template_xml="./template.xml",indata=outdata,out_xml=outfile)
@@ -125,4 +125,8 @@ def main(infile, outfile,
 import sys
 args=sys.argv
 print(args[1], "->",args[2])
-main(infile=args[1],outfile=args[2])
+if (len(args)==3):
+    main(infile=args[1],outfile=args[2])
+    
+if (len(args)==6):
+    main(infile=args[1],outfile=args[2],displaywidth=int(args[3]),displayheight=int(args[4]),intercept=float(args[5]))
