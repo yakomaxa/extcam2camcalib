@@ -13,9 +13,13 @@ externalcamera.cfgからOculus Mixed Reality Captureのカメラ位置設定xml�
 
 ```python ./extcam2camcalib.py input.cfg output.xml```
 
+スクリプトと同じディレクトリにtemplate.xmlが必要です。
+
 -------------------------------------------------
 
 A R/python script to convert externalcamera.cfg from SteamVR into cameracalibration.xml for Oculus Mixed Reality Capture.
+
+You need template.xml in the same directory as the script.
 
 Simple usage:
 
@@ -28,4 +32,3 @@ or
 At this moment, some parameters like display-width, height, and Y-axis intercept may be hardcoded.
 
 I intended to complie python scirpt, but I've got lost.
-
