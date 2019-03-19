@@ -1,4 +1,5 @@
-extcam2camcalib
+
+# extcam2camcalib
 
 externalcamera.cfgからOculus Mixed Reality Captureのためのxmlをつくるスクリプトです。
 
