@@ -1,9 +1,8 @@
 #!/bin/Rscript
 # a script to covert externalcamera.cfg to cameracalibration.xml
-# Define functions
-## main()
-## fov2cameramatrix()
 
+
+# Define functions
 main <- function(infile,
                  outfile,
                  template="template.xml",
