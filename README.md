@@ -1,15 +1,17 @@
 
 # extcam2camcalib
 
-externalcamera.cfgからOculus Mixed Reality Captureのためのxmlをつくるスクリプトです。
+externalcamera.cfgからOculus Mixed Reality Captureのカメラ位置設定xmlをつくるスクリプトです。
 
-Rあるいはpythonで書いてあり、中身は多分一緒です。
+きわめて適当にR or pythonで書いてあり、中身は多分一緒です。
 
-利便性のためバイナリにしたくてpythonのも書いたのですが、いまのところできてません。WindowsでPyinstallerつかうの初めてで挫折。
+利便性のためバイナリにしたくてpythonのも書いたのですが、WindowsでPyinstallerつかうの初めてで挫折。
 
-```python ./extcam2camcalib.py input.cfg output.xml```
+こんな感じで使います。
 
 ```Rscript ./extcam2camcalib.R input.cfg output.xml```
+
+```python ./extcam2camcalib.py input.cfg output.xml```
 
 -------------------------------------------------
 extcam2camcalib
