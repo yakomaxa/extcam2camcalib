@@ -13,7 +13,7 @@ externalcamera.cfgからOculus Mixed Reality Captureのカメラ位置設定xml�
 
 ```python ./extcam2camcalib.py input.cfg output.xml```
 
-スクリプトと同じディレクトリにtemplate.xmlが必要です。
+スクリプトと同じディレクトリにtemplate.xml（一緒に置いてあるやつ）が必要です。
 
 -------------------------------------------------
 
