@@ -5,7 +5,7 @@ externalcamera.cfgからOculus Mixed Reality Captureのカメラ位置設定xml�
 
 きわめて適当にR or pythonで書いてあり、中身は多分一緒です。
 
-利便性のためバイナリにしたくてpythonのも書いたのですが、WindowsでPyinstallerつかうの初めてで挫折。
+利便性のためバイナリにしたくてpythonのも書いたのですが、WindowsでPyinstallerつかうの初めてで挫折。やる気がでたらバイナリも置きます。
 
 こんな感じで使います。
 
