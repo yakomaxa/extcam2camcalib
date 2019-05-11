@@ -1,14 +1,15 @@
 #!/bin/Rscript
 # a script to covert externalcamera.cfg to cameracalibration.xml
-
-
 # Define functions
+## main()
+## fov2cameramatrix()
+
 main <- function(infile,
                  outfile,
                  template="template.xml",
                  slice=1.65,
-                 displaywidth=1280,
-                 displayheight=960){
+                 displaywidth=1920,
+                 displayheight=1080){
   
   # read externalcamera.cfg. x, y, z, rx, ry, rz, and fov are extracted. 
   # Other variables are ignored 
@@ -164,6 +165,11 @@ write_oculusxml=function(template_xml,
 
 
 args=commandArgs(TRUE)
+if (length(args)==4){
+  main(infile = args[1],
+     outfile = args[2],displaywidth = as.numeric(args[3]),displayheight = as.numeric(args[4]))
+}else{
+  main(infile = args[1],
+       outfile = args[2])
+}
 
-main(infile = args[1],
-     outfile = args[2])
