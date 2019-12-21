@@ -2,11 +2,11 @@
 
 2019/21/Dec:
 * 引数が５個に増えました 順番に、入力のcfg 出力のcfg ウインドウ幅 ウインドウ高さ 垂直方向オフセット です。
-* 垂直方向の水平移動1.65をデフォルトにしていたのですが、自分のところで0.0で動くようになったり意味不明なので外から与えられるようにしました。
-* Pythonの方で出力されるxmlのヘッダーが変で読み込み不能という指摘をいただきましたので、修正しました。
+* 垂直方向の水平移動1.65をデフォルトにしていたのですが、自分のところで0.0で動くようになったりと謎が多いので外から与えられるようにしました。
+* Pythonの方で出力されるxmlのヘッダーが欠損しており読み込み不能という指摘をいただきましたので、修正しました。
 
 * Now the script takes 5 Command arguments: input.cfg out.xml window-width window-height vertial-offset
-* Previous version had default vertical offset 1.65, but this can be given by option. 
+* Previous version had default vertical offset 1.65, but this is a mandatory argument. It should be 0.00, but probably depends on situation. I used to use 1.65, but I now use 0.00.
 * Fixed a serious bug in python version. The lack of the xml header found to have caused Oculus Camera Calibration Tool to crash. Thank you for report.
 
 ------------------------
