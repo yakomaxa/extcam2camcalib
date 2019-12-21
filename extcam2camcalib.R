@@ -32,7 +32,7 @@ main <- function(infile,
   # X = x 
   outdata$x = cfg$x
   # Y = y + silce 
-  # I found slice = 1.65 is good, but what is this ???
+  # I had found slice = 1.65 was good, but now it should be 0.00 what was that magic number ???
   outdata$y = (cfg$y + slice)
   # Z = -z 
   outdata$z = -cfg$z  
