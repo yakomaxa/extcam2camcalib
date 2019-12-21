@@ -7,7 +7,7 @@
 main <- function(infile,
                  outfile,
                  template="template.xml",
-                 slice=1.65,
+                 slice=0.00,
                  displaywidth=1920,
                  displayheight=1080){
   
@@ -165,11 +165,5 @@ write_oculusxml=function(template_xml,
 
 
 args=commandArgs(TRUE)
-if (length(args)==4){
-  main(infile = args[1],
-     outfile = args[2],displaywidth = as.numeric(args[3]),displayheight = as.numeric(args[4]))
-}else{
-  main(infile = args[1],
-       outfile = args[2])
-}
-
+main(infile = args[1],
+     outfile = args[2],displaywidth = as.numeric(args[3]),displayheight = as.numeric(args[4]),slice=args[5])

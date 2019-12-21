@@ -104,10 +104,19 @@ def write_oculusxml(template_xml, indata, out_xml):
 
                     elem2.text = s
 
-    xml.write(out_xml)
+
+    # xml.write(file_or_filename=out_xml,xml_declaration=True,encoding="utf-8")
+    # xml.write writes xml header with single quote, which cause Oculus camera calibration tool to crash
+    # Without xml_declaration=True, xml header is absent so that the xml causes crash too.
+    # Therefore, manually give a header.
+    xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml_main = et.tostring(xml.getroot(), encoding='utf-8', method='xml').decode()
+    file = open(file=out_xml, mode="w")
+    file.write(xml_header + xml_main)
+    file.close()
 
 def main(infile, outfile,
-         displaywidth=1280, displayheight=960, intercept=1.65):
+         displaywidth=1280, displayheight=960, intercept=0.00):
     #displaywidth = 1280
     #displayheight = 960
     #slice = 1.65
@@ -125,8 +134,4 @@ def main(infile, outfile,
 import sys
 args=sys.argv
 print(args[1], "->",args[2])
-if (len(args)==3):
-    main(infile=args[1],outfile=args[2])
-    
-if (len(args)==6):
-    main(infile=args[1],outfile=args[2],displaywidth=int(args[3]),displayheight=int(args[4]),intercept=float(args[5]))
+main(infile=args[1],outfile=args[2],displaywidth=int(args[3]),displayheight=int(args[4]),intercept=float(args[5]))
