@@ -50,3 +50,11 @@ Usage:
 * You need template.xml in the same directory as the script. This template script is probably enough to test how to load xml to Oculus Camera Calibration Tool.
 * Window width/height depend on your game window size. 
 * Offset shoud be 0.00, but depends on situations. I used to use 1.65, but now I use 0.00. Try changing it if position of hand and controller do not fit.
+
+
+## License
+MIT License
+
+Author Koya.S
+
+If you have questions (usage or so) on this script, ask it to me.
