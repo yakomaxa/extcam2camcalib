@@ -53,8 +53,10 @@ Usage:
 
 
 ## License
+Copyright (c) 2020 Koya.S
+Released under the MIT license
+https://opensource.org/licenses/mit-license.php
 MIT License
 
-Author Koya.S
-
+# Notes
 If you have questions (usage or so) on this script, ask it to me.
