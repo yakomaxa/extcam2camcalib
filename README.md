@@ -1,6 +1,10 @@
 # extcam2camcalib
 # Japanese (Go bottom for English)
 ## Updates
+#
+2021/29/Apr:
+おそらくOculus側のアップデートによりSteamVRとOculusのソフトを同時起動するとHMDのトラッキングができなくなったようです。このスクリプトを使って位置合わせをしてもトラッキングできないので、このアプローチ自体がOut of dateになったようです。
+
 2019/21/Dec:
 * 引数が５個に増えました。左から順番に、入力のcfg 出力のcfg ウインドウ幅 ウインドウ高さ 垂直方向オフセット です。
 * 垂直方向の水平移動1.65をデフォルトにしていたのですが、自分のところで0.0で動くようになったりと謎が多いので外から与えられるようにしました。
@@ -30,6 +34,8 @@ externalcamera.cfgからOculus Mixed Reality Captureのカメラ位置設定xml�
 # English
 
 ## Updates
+2021/29/Apr:
+Probably because of Oculus update, now SteamVR cannot track HMD alongside Oculus software runnning. Thefore, my workaround that use Oculus software alongside with SteamVR now went out of date. 
 
 2019/21/Dec:
 * Now the script takes mandatory 5 commandline arguments: input.cfg out.xml window-width window-height vertial-offset
